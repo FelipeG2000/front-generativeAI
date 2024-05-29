@@ -32,7 +32,7 @@ export default {
   methods: {
     enviarPregunta() {
       if (this.pregunta.trim()) {
-        axios.post('http://127.0.0.1:8000/api/answer/', { question: this.pregunta })
+        axios.post('http://3.90.219.166//api/answer/', { question: this.pregunta })
           .then(response => {
             this.respuesta = response.data;
           })
